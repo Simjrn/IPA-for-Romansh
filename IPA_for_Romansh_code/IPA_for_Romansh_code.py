@@ -1,12 +1,14 @@
 import streamlit as st
+from time import sleep
 
 word = st.text_input("Write your word here")
+sleep(9)
 finished = []
 while True:
   letter = word[0]
 for index in range(len(word)):
   if letter == "c":
-    if word[1] == "e" or "i":
+    if word[1] == "e" or word[1] == "i":
       finished.append('ts')
       word = word[1:]
     else:
