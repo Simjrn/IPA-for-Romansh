@@ -10,7 +10,7 @@ for index in range(len(word)):
       finished.append('ts')
       word = word[1:]
     else:
-      finish.append('k')
+      finished.append('k')
       word = word[1:]
   elif letter == "j":
     finished.append('y')
