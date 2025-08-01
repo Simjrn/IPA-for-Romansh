@@ -8,10 +8,10 @@ for index in range(len(word)):
   if letter == "c":
     if word[1] == "e" or "i":
       finished.append('ts')
-      word = word[c:]
+      word = word[1:]
     else:
       finish.append('k')
-      word = word[c:]
+      word = word[1:]
   elif letter == "j":
     finished.append('y')
     word = word[j:]
@@ -19,19 +19,19 @@ for index in range(len(word)):
     if word[1] == "u":
       finished.append('a')
       finished.append('o')
-      word = word[a:]
-      word = word[u:]
+      word = word[1:]
+      word = word[1:]
   elif letter == "t":
     if word[1] == "g":
       finished.append('c')
       finished.append('i')
-      word = word[t:]
-      word = word[g:]
+      word = word[1:]
+      word = word[1:]
     else:
       finished.append('t')
-      word = word[t:]
+      word = word[1:]
   else:
     finished.append(letter)
-    word = word[letter:]
+    word = word[1:]
 result = "".join(finished)
 st.subheader(result)
